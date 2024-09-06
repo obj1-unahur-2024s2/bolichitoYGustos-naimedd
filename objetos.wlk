@@ -113,4 +113,22 @@ object placa {
     method esMaterialBrillante() {
     return self.material().esBrillante()
   }
+
 }
+object cajita {
+  var objetoAdentro = placa
+
+  method objetoAdentro() {
+    return objetoAdentro
+  }
+  method objetoAdentro(unObjeto){objetoAdentro = unObjeto}
+  method peso(){return 400 + objetoAdentro.peso()}
+  method material() {return cobre}
+  method color() {return rojo}
+      method esDeColorFuerte() {
+    return self.color().esFuerte()
+  }
+    method esMaterialBrillante() {
+    return self.material().esBrillante()
+  }
+} 
